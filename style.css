@@ -1,0 +1,127 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+     /* Nav Part */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#E02C6D;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin-right:50px;
+}
+.nav-tittle{
+    font-size: 40px;
+    margin-left: 120px;
+    font-weight: 700;
+}
+
+    /* Top Part */
+
+    .top-part{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    .top-part-text h1{
+        font-size: 52px;
+    }
+    .top-part-text p{
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    #book-button{
+        background-color:  #E02C6D;
+        border-radius: 41px;
+        text-decoration: none;
+        padding: 10px 24px;
+        color: white;
+    }
+    .top-part img{
+        width: 440px;
+        height: 414px;
+    }
+    .top-camera{
+        background-image: url(images/Circle\ design.svg);
+    }
+
+    /* Logo Part */
+
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid grey;
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+       /* Products Part */
+
+       .container{
+        display: flex;
+        justify-content: center;
+        background-color: #FFFFFF;
+        margin-top: 80px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+       }
+       .product-tittle{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-size: 35px;
+       }
+       .products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 120px;
+        border-radius: 5px;
+       }
+       .product-info{
+        margin-top: 30px;
+       }
+       .products-detail{
+        background-color: #FFFFFF;
+       }
+       .rating{
+       color: #FB8200;
+       margin-bottom: -10px;
+       }
+
+       /* Last Part */
+       .last-part{
+        display: flex;
+        justify-content: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+       }
+       .last-text{
+        margin-left: 30px;
+       }
+       .last-part h1{
+        font-size: 35px;
+       }
+       .last-part p{
+        font-size: 20px;
+       }
+
+       /* Footer */
+       footer{
+       background-color:#0A0826;
+        text-align: center;
+        color: white;
+        padding: 30px;
+       }
