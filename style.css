@@ -1,16 +1,22 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+ 
+}
+.main-layout{
+    max-width: 1280px;
+    margin: 0 auto;
 }
      /* Nav Part */
-
+ 
 nav{
     display: flex;
     justify-content: space-between;
     background-color:#E02C6D;
     padding: 40px;
     border-radius: 10px;
-    
+ 
+ 
 }
 nav a{
     text-decoration: none;
@@ -23,9 +29,16 @@ nav a{
     margin-left: 120px;
     font-weight: 700;
 }
-
+ 
+/* correction */
+.nav-items{
+    display: flex;
+    align-items: center;
+ 
+}
+ 
     /* Top Part */
-
+ 
     .top-part{
         display: flex;
         justify-content: center;
@@ -53,9 +66,9 @@ nav a{
     .top-camera{
         background-image: url(images/Circle\ design.svg);
     }
-
+ 
     /* Logo Part */
-
+ 
     .logo{
         display: flex;
         justify-content: space-evenly;
@@ -65,9 +78,9 @@ nav a{
         margin-right: 10px;
         margin-left: 10px;
     }
-
+ 
        /* Products Part */
-
+ 
        .container{
         display: flex;
         justify-content: center;
@@ -76,7 +89,7 @@ nav a{
         border: 1px solid lightgrey;
         border-radius: 5px;
        }
-       .product-tittle{
+     .product-tittle{
         display: flex;
         justify-content: center;
         margin-top: 60px;
@@ -98,13 +111,14 @@ nav a{
        color: #FB8200;
        margin-bottom: -10px;
        }
-
+ 
        /* Last Part */
+       /* correction */
        .last-part{
         display: flex;
         justify-content: center;
-        margin-left: 20%;
-        margin-right: 20%;
+        align-items: center;
+        gap: 30px;
         margin-top: 50px;
         margin-bottom: 30px;
        }
@@ -117,11 +131,56 @@ nav a{
        .last-part p{
         font-size: 20px;
        }
-
+ 
        /* Footer */
        footer{
        background-color:#0A0826;
         text-align: center;
         color: white;
         padding: 30px;
+       }
+ 
+ 
+       @media screen and (max-width: 600px){
+        nav{
+            flex-direction: column;
+           justify-items: center;
+        }
+        .nav-tittle{
+            margin-left: 0px;
+        }
+        .nav-items{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .top-part{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 10px;
+            justify-items: center;
+        }
+        .logo{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns:1fr;
+        }
+       .product-tittle{
+        display: flex;
+        justify-content: center;
+       }
+       .products{
+        display: grid;
+            grid-template-columns:1fr;
+            justify-items: center;
+       }
+       .last-part{
+        display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+       }
        }
